@@ -34,6 +34,7 @@ app.use('/api', authRoutes);
 app.use('/api', userRoutes);
 app.use('/api', categoryRoutes);
 app.use('/api', productRoutes);
+app.get('/', (req, res) => res.send("hello wolrd"));
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
